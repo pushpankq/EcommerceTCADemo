@@ -10,6 +10,7 @@
 		13CDBFC10525ED0CCEA6EE0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863B62A2B1B4F71EE52903D6 /* Assets.xcassets */; };
 		412531DB1495B4ADF07DCE8D /* EcommerceTCADemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC954EA3F5FD3692CD7E4F /* EcommerceTCADemoApp.swift */; };
 		99B7F36E5BC470AB340548BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442E6614819A821BDEAA3515 /* Preview Assets.xcassets */; };
+		9B2D20ED02468B708FB3E126 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8C42AC5E4B0C643F32EB2C44 /* ComposableArchitecture */; };
 		D6D078AA85B9E18D60CAC50E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E79D17B10510561696D6 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +21,17 @@
 		863B62A2B1B4F71EE52903D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D4E79D17B10510561696D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27681F6FA93615B6E053EBFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B2D20ED02468B708FB3E126 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		363B682632B9CB247C25033E /* Preview Content */ = {
@@ -66,12 +78,16 @@
 			buildPhases = (
 				CB2A7F6E47294DCBD4DB0D51 /* Sources */,
 				64A93D745FA708C27BC2CDAE /* Resources */,
+				27681F6FA93615B6E053EBFC /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = EcommerceTCADemo;
+			packageProductDependencies = (
+				8C42AC5E4B0C643F32EB2C44 /* ComposableArchitecture */,
+			);
 			productName = EcommerceTCADemo;
 			productReference = 4A2B4BF2C0385ADC4CC16C4F /* EcommerceTCADemo.app */;
 			productType = "com.apple.product-type.application";
@@ -96,6 +112,9 @@
 				en,
 			);
 			mainGroup = C8711021DD0E38E0C3E32F4A;
+			packageReferences = (
+				F59BF0A97ED449F0D8B327AC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -300,6 +319,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F59BF0A97ED449F0D8B327AC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C42AC5E4B0C643F32EB2C44 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F59BF0A97ED449F0D8B327AC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D074A1BA13F9FCA9F74BC1DD /* Project object */;
 }

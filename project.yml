@@ -1,6 +1,10 @@
 name: EcommerceTCADemo
 options:
   bundleIdPrefix: com.state.EcommerceTCADemo
+packages:
+  ComposableArchitecture:
+    url: https://github.com/pointfreeco/swift-composable-architecture
+    majorVersion: 1.8.0
 targets:
   EcommerceTCADemo:
     type: application
@@ -8,3 +12,5 @@ targets:
     deploymentTarget: "14.0"
     sources:
       - EcommerceTCADemo
+    dependencies:
+      - package: ComposableArchitecture
